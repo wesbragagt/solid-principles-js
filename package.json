@@ -1,0 +1,11 @@
+{
+  "type": "module",
+  "name": "solid-principles-js",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.24.0",
+    "node-fetch": "^3.0.0"
+  }
+}
