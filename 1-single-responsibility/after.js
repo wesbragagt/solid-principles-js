@@ -22,6 +22,7 @@ function main(){
 function pipe(...fns){
   return (value) => fns.reduce((output, fn) => fn(output), value)
 }
+// this string1 string2 --> {source: string1, dest: string2}
 function parseStringToJson(str = ''){
   const parsed = str.split('\n').filter(Boolean).map(line => line.split(' ')).reduce((acc,cur) => {
     const [source, dest] = cur

@@ -2,7 +2,7 @@
 // Single Responsibility principle
 
 // We have to read from a list of urls in a text file and we need to output a json file using javascript
-// go from this ^about/contact-us about/ --> {"source": "about/", "dest": "about/"}
+// go from this ^about/contact-us about/ --> {"source": "about/contact-us", "dest": "about/"}
 const fs = require("fs");
 const path = require("path");
 

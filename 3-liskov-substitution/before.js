@@ -29,6 +29,7 @@ function useRectangleArea(rectangle) {
   console.log("Rectangle area: ", rectangle.getArea());
 }
 
-
+// Square is a rectangle but a rectangle is not a square
+// wrong abstraction
 useRectangleArea(new Rectangle());
 useRectangleArea(new Square());
