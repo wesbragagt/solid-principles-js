@@ -1,6 +1,8 @@
 // After
 // Liskov Substitution Principle
 class Shape {
+  setWidth(){}
+  setHeight(){}
   getArea() {
     return this.width * this.height;
   }
