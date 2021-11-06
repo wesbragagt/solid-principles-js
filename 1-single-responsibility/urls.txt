@@ -1,0 +1,4 @@
+^about/our-company ^about/
+^about/our-staff ^about/
+^contact/management ^contact/
+^contact/support ^contact/

@@ -1,0 +1,18 @@
+[
+  {
+    "source": "^",
+    "dest": "a"
+  },
+  {
+    "source": "^",
+    "dest": "a"
+  },
+  {
+    "source": "^",
+    "dest": "c"
+  },
+  {
+    "source": "^",
+    "dest": "c"
+  }
+]

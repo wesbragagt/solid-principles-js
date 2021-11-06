@@ -1,0 +1,18 @@
+[
+  {
+    "source": "^about/our-company",
+    "dest": "^about/"
+  },
+  {
+    "source": "^about/our-staff",
+    "dest": "^about/"
+  },
+  {
+    "source": "^contact/management",
+    "dest": "^contact/"
+  },
+  {
+    "source": "^contact/support",
+    "dest": "^contact/"
+  }
+]
