@@ -1,21 +1,19 @@
 // after.js
 // 2 - Open Closed 
 
-// What if we need to cancel the request?
 // How can I add headers if I need?
 const axios = require('axios').default
-const cancelToken = axios.CancelToken;
 
-function createRequest(endpoint){
-  const url = `https://jsonplaceholder.typicode.com/${endpoint}`
+// createRequest can always be extended to call different baseUrls and pathnames
+function createRequest({pathname,   baseUrl = 'https://jsonplaceholder.typicode.com' }){
+  const url = `${baseUrl}/${pathname}`
   return async (configuration) => axios({url, ...configuration})
 }
 
-const getUsers = createRequest('users')
-const getTodos = createRequest('todos')
+const getUsers = createRequest({pathname: 'users'})
+const getTodos = createRequest({pathname: 'todos'})
 
 getUsers().then(response => console.log(response.data))
-
 getTodos({headers: {
   'x-api-key': 'foobar'
 }}).then(response => console.log(response.data))
