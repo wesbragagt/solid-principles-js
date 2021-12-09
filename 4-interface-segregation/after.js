@@ -14,9 +14,11 @@ function postForm(payload = {}) {
   });
 }
 
+// Each function is depending only on their form fields
 function postContactUs({ email, comment, subject, type } = {}) {
   postForm({ email, comment, subject, type });
 }
+// I've segregated my interface for this form submit function
 function postQuestion({ question, email, type } = {}) {
   postForm({ question, email, type });
 }

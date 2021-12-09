@@ -17,13 +17,16 @@ function postForm({
 } = {}) {
   return fetch({ method: "POST", url: "https://api.site.com/forms", body: JSON.stringify({email, comment, question, subject, howDidYouFindUs, rate, type}) });
 }
+// technically contactUs shouldn't depend on rate, type...
+function postContactUs(form) {
+  postForm(form);
+}
+// postQuestion shouldn't depend on rate, type...
+function postQuestion(form) {
+  postForm(form);
+}
+// postSurvey shouldn't depend on howDidYouFindUs... 
+function postSurvey(form) {
+  postForm(form);
+}
 
-function postContactUs() {
-  postForm({ email, comment, subject, type });
-}
-function postQuestion() {
-  postForm({ question, email, type });
-}
-function postSurvey() {
-  postForm({ type, rate, howDidYouFindUs });
-}
